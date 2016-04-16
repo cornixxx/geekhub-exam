@@ -1,0 +1,45 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+}
+
+h2 {
+  color: #1c1c1c;
+  font-size: 30px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h2 + p {
+  color: #1c1c1c;
+  font-family: 'Lora', serif;
+  font-size: 16px;
+  font-style: italic;
+  margin-bottom: 40px;
+}
+
+p {
+  color: #585858;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875em;
+  line-height: 2;
+}
+
+@include respond-to(medium-screens) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@include respond-to(large-screens) {
+  body {
+    font-size: 16px;
+  }
+}
+
+@include respond-to(wide-screens) {
+  body {
+    font-size: 16px;
+  }
+}

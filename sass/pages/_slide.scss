@@ -1,0 +1,76 @@
+.flexslider {
+  border: none;
+}
+
+ol.flex-control-nav {
+  width: auto;
+  bottom: 15px;
+  right: 50px;
+}
+
+.flex-control-nav li {
+  margin: 0 3px;
+  zoom: 1;
+}
+
+.flex-control-paging li a{
+  width: 25px;
+  height: 4px;
+  background-color: #8f8f8f;
+}
+
+.flex-control-paging li a.flex-active {
+  background-color: $button-color;
+}
+
+.slide-caption {
+  position: absolute;
+  z-index: 9;
+  top: 30%;
+  color: white;
+  padding-left: 15px;
+
+  span {
+    display: block;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: 3.75em;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-family: 'Lora', serif;
+    font-size: 0.9375em;
+    font-style: italic;
+    line-height: 2;
+    color: white;
+  }
+
+  .button {
+    background-color: $button-color;
+    color: black;
+
+    &:hover {
+      background-color: transparent;
+      color: $button-color;
+    }
+  }
+}
+
+.flexslider:hover .flex-direction-nav .flex-prev {
+  opacity: 0;
+}
+.flexslider:hover .flex-direction-nav .flex-prev:hover {
+  opacity: 0;
+}
+.flexslider:hover .flex-direction-nav .flex-next {
+  opacity: 0;
+}
+.flexslider:hover .flex-direction-nav .flex-next:hover {
+  opacity: 0;
+}

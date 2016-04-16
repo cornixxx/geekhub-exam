@@ -1,0 +1,109 @@
+.site-footer {
+  background-color: $footer-bg;
+  padding: 30px 0;
+
+  h3 {
+    color: white;
+    font-size: 1.125em;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .container-fluid {
+    display: flex;
+
+    .site-info {
+      width: 35%;
+
+      .logo {
+        display: block;
+        margin: 30px 0 10px;
+      }
+
+      span {
+        display: block;
+        color: $footer-icon;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+.footer-nav {
+  width: 20%;
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      border-bottom: 1px solid rgba($footer-icon, 0.5);
+      width: 165px;
+      padding: 10px 0;
+
+      &:last-child {
+        border: none;
+      }
+
+      a {
+        text-transform: uppercase;
+        color: #7b7b7c;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 0.8em;
+        font-weight: 600;
+
+        &::before {
+          font-family: FontAwesome;
+          margin-right: 10px;
+          color: $button-color;
+        }
+
+        &:hover {
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.contact {
+  width: 40%;
+  padding: 0 30px;
+
+  form {
+    .name, .email {
+      width: 50%;
+    }
+
+    input, textarea {
+      background: transparent;
+      border: 1px solid rgba($footer-icon, 0.5);
+      outline: none;
+      padding: 10px;
+      color: white;
+    }
+
+    .button {
+      border: 1px solid $button-color;
+      color: $button-color;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+
+  ::-webkit-input-placeholder {
+    color: #737476;
+  }
+
+  ::-moz-placeholder          {color: #737476;}/* Firefox 19+ */
+  :-moz-placeholder           {color: #737476;}/* Firefox 18- */
+  :-ms-input-placeholder      {color: #737476;}
+
+  :focus::-webkit-input-placeholder {color: transparent}
+  :focus::-moz-placeholder          {color: transparent}
+  :focus:-moz-placeholder           {color: transparent}
+  :focus:-ms-input-placeholder      {color: transparent}
+}

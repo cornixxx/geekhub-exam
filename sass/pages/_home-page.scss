@@ -1,0 +1,56 @@
+.services {
+  background-color: #eaeff3;
+  padding: 50px 0;
+}
+.services-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+
+  article {
+    width: 50%;
+
+    img {
+      float: left;
+      margin-right: 20px;
+    }
+
+    .text {
+      overflow: hidden;
+
+      h3 {
+        margin-top: 0;
+        color: $heading-color;
+        font-family: Raleway, sans-serif;
+        font-size: 1em;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+
+      p {
+        color: $text-color;
+        font-size: 0.875em;
+        line-height: 2;
+
+      }
+    }
+  }
+}
+
+.about {
+  padding-bottom: 30px;
+
+  .about-heading {
+    float: left
+  }
+
+  .about-info {
+    width: 60%;
+    float: right;
+  }
+}
+
+.banner {
+
+}
